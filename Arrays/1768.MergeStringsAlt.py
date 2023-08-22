@@ -22,5 +22,10 @@ def mergeAlternately(word1: str, word2: str) -> str:
         return string
         
                 
-print(mergeAlternately("stop", "li"))            
+print(mergeAlternately("stop", "li")) 
+
+
+
+# Runtime 41ms Beats 66.29%
+# Memory 16.3MB Beats 35.75%           
                 
