@@ -2,30 +2,29 @@ def gcdOfStrings(str1: str, str2: str):
     str1 = set(str1)
     str2 = set(str2)
     
-    res1 = []
-    res2 = []
+    arr1 = []
+    arr2 = []
     
-    str3=""
-    str4=""
-
+    str1 = ""
+    str2 = ""
     
     for char in str1:
-        res1.append(char)
+        arr1.append(char)
         
     for char in str2:
-        res2.append(char)
+        arr2.append(char)
         
-    res1.sort()
-    res2.sort()
+    arr1.sort()
+    arr2.sort()
     
-    for char in res1:
-        str3 += char
+    for char in arr1:
+        str1 += char
         
-    for char in res2:
-        str4 += char
+    for char in arr2:
+        str2 += char
     
-    if str3 in str4:
-        return str3
+    if str1 in str2:
+        return str1
     else:
         return '""'
  
