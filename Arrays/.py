@@ -1,25 +1,26 @@
-str1 = "LEET"
-str2 = "CODE"
-# str1 = "ABABAB"
-# str2 = "ABAB"
+str1 = "ABABAB"
+str2 = "ABAB"
+# expect AB SINCE ABAB APPEAR ONLY ONCE IN STR1
 
-str1 = set(str1)
-str2 = set(str2)
-res1 = ""
-res2 = ""
-
-for char in str1:
-    res1 += char
-for char in str2:
-    res2 += char
-    
-if res1 in res2:
-    print(res1)
+if max(len(str1), len(str2)) == len(str1):
+    long = str1
+    short = str2
 else:
-    print("")
+    long = str2
+    short = str1
 
-# print(res1)
-# print(res2)
+res = ""
+numberOccur = 0
+ 
+for i in range(len(long)):
+    if str1[i] == str1[0] and i != 0:
+        res += str1[:i]
+        break
     
 
-            
+# if res in short:
+#     numberOccur += short.count(res)
+
+print(res)
+       
+# print(res*numberOccur)

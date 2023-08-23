@@ -5,8 +5,8 @@ def gcdOfStrings(str1: str, str2: str):
     arr1 = []
     arr2 = []
     
-    str1 = ""
-    str2 = ""
+    str3 = ""
+    str4 = ""
     
     for char in str1:
         arr1.append(char)
@@ -18,17 +18,17 @@ def gcdOfStrings(str1: str, str2: str):
     arr2.sort()
     
     for char in arr1:
-        str1 += char
+        str3 += char
         
     for char in arr2:
-        str2 += char
+        str4 += char
     
-    if str1 in str2:
-        return str1
+    if str3 in str4:
+        return str3
     else:
-        return '""'
+        return 'crud'
  
  
-print(gcdOfStrings("LEET", "CODE"))
-print(gcdOfStrings("ABCABCABC", "ABC"))
-print(gcdOfStrings("ABABAB", "AB"))
+# print(gcdOfStrings("LEET", "CODE"))
+print(gcdOfStrings("ABCABC", "ABC"))
+# print(gcdOfStrings("ABABAB", "AB"))
