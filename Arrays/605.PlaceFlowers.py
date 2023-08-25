@@ -1,5 +1,5 @@
 def dev(flowerbed: list, n: int) -> bool:
-    if flowerbed.count(0) >= n:
+    if n >= flowerbed.count(0):
         return False
         
     else:
