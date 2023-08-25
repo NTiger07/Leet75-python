@@ -15,4 +15,8 @@ def dev(flowerbed: list, n: int) -> bool:
     return True if count >= n else False
 
 print(dev([1,0,0,0,1], 1))
+
+
+# Runtime 145ms Beats 89.30% of users with Python3
+# Memory 16.89MB Beats 20.25% of users with Python3
     
