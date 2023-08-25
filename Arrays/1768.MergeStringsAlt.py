@@ -20,12 +20,8 @@ def mergeAlternately(word1: str, word2: str) -> str:
         
         string = string.replace(" ", "")
         return string
+       
         
-                
-print(mergeAlternately("stop", "li")) 
-
-
-
 # Runtime 41ms Beats 66.29%
 # Memory 16.3MB Beats 35.75%           
                 
