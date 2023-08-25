@@ -1,18 +1,10 @@
-flowerbed = [1,0,0,0,1]
-n = 1
-
-freeSpaces = flowerbed.count(0)
-
-res = []
-
-for i in range(len(flowerbed)):
-    if flowerbed[i] == 0:
-        res.append(i)
+def dev(flowerbed: list, n: int) -> bool:
+    if flowerbed.count(0) >= n:
+        return False
         
-# print(freeSpaces)
-print(res)
-
-
-
-
-
+    else:
+        return "Let's begin"
+        
+        
+print(dev([1,0,0,0,1], 1))
+    
