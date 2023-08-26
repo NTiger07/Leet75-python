@@ -22,23 +22,18 @@ for pos in positonVowels:
     vowels1.append(str[pos])
     vowels1Reversed.insert(-1, str[pos])
         
+# print(strList)
 
-# print(positonVowels)
-# print(positonVowelsReversed)
-# print(vowels1)
-# print(vowels1Reversed)
+index = 0
+for i in range(len(strList)):
+    if strList[i] in vowels:
+        index += 1
+        print(1)
+        strList[i] = vowels1Reversed[index]
+    else:
+        print(0)
+print("i =", index)
 
-# for i in range(len(strList)):
-#     if strList[i] in vowels:
-#         strList[i] = vowels1Reversed[i]
-#         break
     
-print(strList)
-i = 0
-while i < len(vowels1Reversed):
-    strList[i] = vowels1Reversed[i]
-    print(i)
-    i += 1
-    
-print(strList)
+# print(strList)
         
