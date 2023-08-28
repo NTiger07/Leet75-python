@@ -1,13 +1,12 @@
 def reverseVowels(s:str) -> str:
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
-
-    string = "hello"
+    
     values = []
     indexes = []
     res = []
     resString = ''
 
-    strArray = list(string)
+    strArray = list(str)
         
     for char in strArray:
         if char not in vowels:
