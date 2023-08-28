@@ -1,39 +1,23 @@
 vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 
-str = "hello"
-# holle
-strList = []
+string = "hello"
+values = []
+indexes = []
+res = []
+resString = ''
 
-for char in str:
-    strList.append(char)
-
-positonVowels = []
-positonVowelsReversed = []
-vowels1 = []
-vowels1Reversed = []
-
-
-for i in range(len(strList)):
-    if strList[i] in vowels:
-        positonVowels.append(i)
-        positonVowelsReversed.insert(-1, i)
-        
-for pos in positonVowels:  
-    vowels1.append(str[pos])
-    vowels1Reversed.insert(-1, str[pos])
-        
-# print(strList)
-
-index = 0
-for i in range(len(strList)):
-    if strList[i] in vowels:
-        index += 1
-        print(1)
-        strList[i] = vowels1Reversed[index]
-    else:
-        print(0)
-print("i =", index)
-
+strArray = list(string)
     
-# print(strList)
-        
+for char in strArray:
+    if char not in vowels:
+        res.append(char)
+    
+for index, value in enumerate(strArray):
+    if value in vowels:
+        indexes.append(index)
+        values.insert(-1, value)
+
+for i in range(len(indexes)):
+    res.insert(indexes[i], values[i])
+    
+print(resString.join(res))
