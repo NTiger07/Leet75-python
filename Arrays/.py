@@ -1,20 +1,17 @@
-vowels = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"}
-
-string = "race car"
-string = list(string)
+string = "the sky is blue"
+words = []
 
 l = 0
-r = len(string) - 1
+r = 0
 
-while (l < r):
-    if string[l] not in vowels:
-        l += 1
-    elif string[r] not in vowels:
-        r -= 1
-    else:
-        string[l], string[r] = string[r], string[l]
-        l += 1
-        r -= 1
-    
+while r < len(string):
+    if string[r] == " ":
+        words.append(string[l:r+1])
+        l = r
+        r += 1
 
-print("".join(string))
+    elif string[r] != " ":
+        r += 1
+       
+        
+print(words)
