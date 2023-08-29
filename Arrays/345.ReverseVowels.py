@@ -14,3 +14,7 @@ def reverseVowels(string:str) -> str:
         string[indexes[i]] = values[i]
         
     return "".join(string)
+
+
+# Runtime 55ms Beats 81.27% of users with Python3
+# Memory 19.16MB Beats 7.58% of users with Python3
