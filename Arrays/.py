@@ -1,4 +1,6 @@
-string = "the sky is blue"
+# string = "the sky is blue"
+# string = " hello world "
+string = " hello world "
 words = []
 
 l = 0
