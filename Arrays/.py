@@ -1,11 +1,10 @@
 # string = "the sky is blue"
 # string = " hello world "
-string = " hello world "
+string = "a good  example"
 words = []
 
 l = 0
 r = 0
-
 string = string + " "
 while r < len(string):
     if string[r] == " ":
@@ -16,5 +15,13 @@ while r < len(string):
     elif string[r] != " ":
         r += 1
     
-res = "".join(words[::-1])
-print(res.strip())
+    
+words.remove(" ")
+    
+res = "".join(words[::-1]).strip()
+
+print(res)
+
+
+        
+
