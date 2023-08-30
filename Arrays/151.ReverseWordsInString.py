@@ -19,6 +19,5 @@ def reverseWords(s: str) -> str:
     return "".join(words[::-1]).strip()
 
     
-# print(reverseWords("the sky is blue"))
-# print(reverseWords(" hello world "))
-print(reverseWords("a good  example"))
+# Runtime 109ms Beats 5.40% of users with Python3
+# Memory 16.30MB Beats 97.91% of users with Python3
