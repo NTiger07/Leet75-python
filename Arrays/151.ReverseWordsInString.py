@@ -19,6 +19,6 @@ def reverseWords(s: str) -> str:
     return "".join(words[::-1]).strip()
 
     
-print(reverseWords("the sky is blue"))
-print(reverseWords(" hello world "))
+# print(reverseWords("the sky is blue"))
+# print(reverseWords(" hello world "))
 print(reverseWords("a good  example"))
