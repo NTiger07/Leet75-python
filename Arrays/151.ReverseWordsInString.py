@@ -13,7 +13,7 @@ def reverseWords(s: str) -> str:
         elif s[r] != " ":
             r += 1
         
-    if " " in words:
+    while " " in words:
         words.remove(" ")
         
     return "".join(words[::-1]).strip()

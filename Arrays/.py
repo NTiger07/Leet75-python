@@ -17,8 +17,14 @@ while r < len(s):
 # if " " in words:
 #     words.remove(" ")
 
-while " " in words:
-    words.remove(" ")
+Runtime
+Details
+109ms
+Beats 5.40%of users with Python3
+Memory
+Details
+16.30MB
+Beats 97.91%of users with Python3
 
 # print(words)
         
