@@ -1,4 +1,4 @@
-def productExceptSelf(nums: list[int]):
+def productExceptSelf(nums: list[int]) -> list[int]:
     return nums
     
     
