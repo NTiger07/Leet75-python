@@ -1,5 +1,4 @@
-arr = [1,2,2,1,1,3]
-def uniqueOccurrences(arr):
+def uniqueOccurrences(arr: list[int]) -> bool:
     hash = {}
 
 
@@ -13,6 +12,3 @@ def uniqueOccurrences(arr):
     occurrences = hash.values()
 
     return len(occurrences) == len(set(occurrences))
-
-
-print(uniqueOccurrences(arr))
