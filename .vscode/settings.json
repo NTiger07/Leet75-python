@@ -1,0 +1,6 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "BoBoo.prettier-extension-vscode"
+    },
+    "python.formatting.provider": "black"
+}
