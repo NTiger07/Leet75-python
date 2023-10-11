@@ -1,6 +1,6 @@
 {
     "[python]": {
-        "editor.defaultFormatter": "BoBoo.prettier-extension-vscode"
+        "editor.defaultFormatter": "ms-python.autopep8"
     },
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "none"
 }
