@@ -1,13 +1,8 @@
 from collections import deque
-maze1 = [["+", "+", ".", "+"], [".", ".", ".", "+"],
-         ["+", "+", "+", "."]]  # . means empty cells
-# Output 1                                      + means walls
-entrance1 = [1, 2]
-
 
 def nearestExit(maze, entrance):
     ROWS, COLUMNS = len(maze), len(maze[0])
-    # Entrance and number of steps
+    
     queue = deque([(entrance[0], entrance[1], 0)])
     directions = [(0, 1), (0, -1), (-1, 0), (1, 0)]  # Up, down, left, right
     visited = set()
@@ -31,4 +26,5 @@ def nearestExit(maze, entrance):
     return -1
 
 
-print(nearestExit(maze1, entrance1))
+# Runtime 561ms Beats 69.56% of users with Python
+# Memory 16.48MB Beats 41.94% of users with Python
