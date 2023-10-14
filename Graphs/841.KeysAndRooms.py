@@ -1,12 +1,3 @@
-rooms1 = [[1], [2], [3], []]
-rooms = [
-    [1, 3],
-    [3, 0, 1],
-    [2],
-    [0]
-]
-
-
 def canVisitAllRooms(rooms):
     visited = set()
 
@@ -20,5 +11,6 @@ def canVisitAllRooms(rooms):
     explore(0)
     return len(visited) == len(rooms)
 
+# Runtime 34ms Beats 93.24% of users with Python
+# Memory 13.84MB Beats 58.55% of users with Python
 
-print(canVisitAllRooms(rooms1))
